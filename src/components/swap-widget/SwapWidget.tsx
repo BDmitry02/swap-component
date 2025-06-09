@@ -10,10 +10,10 @@ import { networkMockData, priceMockData, tokenMockData } from "@/mock-data";
 import { SwapSubmitButton } from "@/components/swap-widget/swap-submit-button/SwapSubmitButton";
 
 export function SwapWidget() {
-    const [isMobile, setIsMobile] = useState(false);
+    const [, setIsMobile] = useState(false);
 
     //placeholder for wallet connection state
-    const [isWalletConnected, setIsWalletConnected] = useState(true);
+    const isWalletConnected = true;
 
     useEffect(() => {
         checkIsMobile(setIsMobile);
